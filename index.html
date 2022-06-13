@@ -9,84 +9,101 @@
     <title>Questions</title>
     <style>
         body {
-    background-color: rgb(243, 181, 193);
-}
+            width: 210mm;
+            height: 297mm;
+            margin: 0;
+            /* background-color: rgb(243, 181, 193); */
+        }
 
-#title {
-    text-align: center;
-    font-style: italic;
-    font-size: 40px;
-    color: rgb(195, 137, 61);
-}
+        .like {
+            margin: 0;
+            background-color: rgb(243, 181, 193);
 
-h2 {
-    text-align: center;
-    font-size: 33px;
-}
+        }
 
-span {
-    color:mediumvioletred
-}
+        #title {
+            margin: 0;
+            text-align: center;
+            font-style: italic;
+            font-size: 33px;
+            color: rgb(195, 137, 61);
+        }
 
-.name {
-    text-align: right;
-    font-size: 30px;
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-bottom: 70px;
-}
+        h2 {
+            text-align: center;
+            font-size: 28px;
+        }
 
-input {
-    background-color:bisque;
-    size: 30;
-}
+        span {
+            color: mediumvioletred
+        }
 
-.ques {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+        .name {
+            text-align: right;
+            font-size: 27px;
+            margin-top: 40px;
+            margin-right: 50px;
+            margin-bottom: 20px;
+        }
 
-.frame {
-    margin: 20px;
-}
+        input {
+            background-color: bisque;
+            size: 30;
+        }
 
-.question {
-    font-size: 25px;
-    font-family:cursive;
-    color:rgb(80, 72, 72)
-}
+        .ques {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+        }
 
-.question-div {
-    margin-bottom: 40px;
-}
+        /* .frame {
+            margin: 20px;
+        } */
 
-.check {
-    width: 23px;
-    height: 23px;
-}
+        .question {
+            font-size: 20px;
+            font-family: cursive;
+            color: rgb(80, 72, 72)
+        }
 
-.footer {
-    text-align: center;
-    font-style: italic;
-    font-size: 40px;
-}
+        .question-div {
+            margin-bottom: 30px;
+            margin-left: 15px;
+        }
 
-.image {
-    text-align: center;
-    margin-bottom: 40px;
-}
+        .check {
+            width: 23px;
+            height: 23px;
+        }
 
-.font {
-    border-radius: 30px;
-}
+        .footer {
+            text-align: center;
+            font-style: italic;
+            font-size: 25px;
+            margin-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        .image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .font {
+            border-radius: 30px;
+        }
+        
     </style>
 </head>
 
 <body>
+    <div class="like">
     <div class="frame">
+        <div class="proba"></div>
         <h1 id="title"> Козметично студио „АМЕЛИЯ БЮТИ“ &#127799;</h1>
         <h2>Какъв е вашият тип кожа? Кратът <span>ТЕСТ:</span></h2>
-        <p class="name">Вашето име: _______________________________</p>
-        <div class="image" > <img class="font" src="images/viber.jpg" alt="" width="400" height="400"> </div>
+        <p class="name">Вашето име: __________________</p>
+        <div class="image"> <img class="font" src="images/viber.jpg" alt="" width="250" height="250"> </div>
         <div class="question-div">
             <h1 class="ques">Кое от следните най-добре описва порите ви?</h1>
             <div>
@@ -112,6 +129,9 @@ input {
                 <p class="question"> <input type="checkbox" class="check"> Кожата ми е мазна и с пъпки.</p>
             </div>
         </div>
+        <br>
+        <br>
+
         <div class="question-div">
             <h1 class="ques">Как изглежда и се чувства кожата ви в края на деня?</h1>
             <div>
@@ -160,6 +180,8 @@ input {
             </div>
         </div>
         <div class="question-div">
+            <br>
+            <br>
             <h1 class="ques">Получавате ли дразнене или зачервяване на кожата си често?</h1>
             <div>
                 <p class="question"> <input type="checkbox" class="check"> ДА - особено след експериментиране с нови
@@ -202,6 +224,7 @@ input {
     <footer>
         <p class="footer">Благодарим за отделеното време!</p>
     </footer>
+</div>
 </body>
 
 </html>
